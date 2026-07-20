@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500&display=swap');
+@import "tailwindcss";
+
+/* PlayersMakingGames brand tokens — deliberately shares Focus's own
+   fantasy (void/ash/ember/parchment/gold) and tech-HUD (neon-*) palette
+   from src/index.css in the FocusSim repo, so the studio site and the
+   game it introduces feel like one world rather than two skins. This is
+   a single committed dark identity (no light-mode variant) — the brand
+   is inherently a "night HUD lit by firelight," not a neutral surface
+   that happens to default dark. */
+:root {
+  --void: #0b0908;
+  --void-deep: #060504;
+  --ash: #1a1410;
+  --ash-2: #241c16;
+  --cinder: #7a2618;
+  --ember: #e8672c;
+  --ember-soft: #f2914f;
+  --gold: #c9a227;
+  --parchment: #ede3d3;
+  --parchment-dim: #a99a86;
+  --parchment-faint: #6c6053;
+  --line: rgba(237, 227, 211, 0.12);
+  --line-strong: rgba(237, 227, 211, 0.22);
+
+  --neon-cyan: #22d3ee;
+  --neon-purple: #a78bfa;
+  --neon-amber: #fbbf24;
+
+  --font-display: 'Cinzel', 'Iowan Old Style', serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background: var(--void);
+  color: var(--parchment);
+}
+
+body {
+  font-family: var(--font-body);
+  background:
+    radial-gradient(80rem 40rem at 15% -10%, rgba(232, 103, 44, 0.10), transparent 60%),
+    radial-gradient(60rem 40rem at 110% 10%, rgba(167, 139, 250, 0.08), transparent 55%),
+    var(--void);
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2, h3, .font-display {
+  font-family: var(--font-display);
+  text-wrap: balance;
+  letter-spacing: 0.01em;
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+::selection {
+  background: var(--ember);
+  color: var(--void-deep);
+}
+
+:focus-visible {
+  outline: 2px solid var(--ember-soft);
+  outline-offset: 3px;
+}
+
+a {
+  color: inherit;
+}
+
+/* Angular clipped corners, echoing the game HUD's own panel treatment
+   (see FocusSim DESIGN_DECISIONS.txt §11: "angular clip-path panel
+   corners" across menus and the battlefield). */
+.panel-cut {
+  clip-path: polygon(
+    0 14px, 14px 0,
+    calc(100% - 14px) 0, 100% 14px,
+    100% calc(100% - 14px), calc(100% - 14px) 100%,
+    14px 100%, 0 calc(100% - 14px)
+  );
+}
+
+.panel-cut-sm {
+  clip-path: polygon(
+    0 9px, 9px 0,
+    calc(100% - 9px) 0, 100% 9px,
+    100% calc(100% - 9px), calc(100% - 9px) 100%,
+    9px 100%, 0 calc(100% - 9px)
+  );
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ember-soft);
+}
+
+.rule-glow {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--line-strong) 20%, var(--ember) 50%, var(--line-strong) 80%, transparent);
+  opacity: 0.6;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
