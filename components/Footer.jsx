@@ -1,13 +1,13 @@
-import { NavLink } from 'react-router-dom'
-import { DISCORD_INVITE_URL } from '../data/links.js'
+import Link from "next/link";
+import { DISCORD_INVITE_URL } from "@/data/links";
 
 const SITEMAP = [
-  { to: '/', label: 'Home' },
-  { to: '/about', label: 'About' },
-  { to: '/games', label: 'Games' },
-  { to: '/news', label: 'News' },
-  { to: '/support', label: 'Support' },
-]
+  { href: "/", label: "Home" },
+  { href: "/about", label: "About" },
+  { href: "/games", label: "Games" },
+  { href: "/news", label: "News" },
+  { href: "/support", label: "Support" },
+];
 
 export default function Footer() {
   return (
@@ -27,10 +27,10 @@ export default function Footer() {
             <div className="eyebrow mb-3">Site</div>
             <ul className="flex flex-col gap-2">
               {SITEMAP.map((l) => (
-                <li key={l.to}>
-                  <NavLink to={l.to} className="text-sm text-[var(--parchment-dim)] hover:text-[var(--parchment)]">
+                <li key={l.href}>
+                  <Link href={l.href} className="text-sm text-[var(--parchment-dim)] hover:text-[var(--parchment)]">
                     {l.label}
-                  </NavLink>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -63,5 +63,5 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }

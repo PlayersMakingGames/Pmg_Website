@@ -1,7 +1,12 @@
-import { Link } from 'react-router-dom'
-import { VALUES } from '../data/values.jsx'
-import { DISCORD_INVITE_URL } from '../data/links.js'
-import ValueCard from '../components/ValueCard.jsx'
+import Link from "next/link";
+import { VALUES } from "@/data/values";
+import { DISCORD_INVITE_URL } from "@/data/links";
+import ValueCard from "@/components/ValueCard";
+
+export const metadata = {
+  title: "About",
+  description: "Why PlayersMakingGames exists, our studio values, and our AI-assisted, human-designed development philosophy.",
+};
 
 export default function About() {
   return (
@@ -22,7 +27,7 @@ export default function About() {
         <div
           aria-hidden
           className="pointer-events-none absolute -right-40 -top-40 h-[28rem] w-[28rem] rounded-full opacity-30 blur-3xl"
-          style={{ background: 'radial-gradient(circle, var(--neon-purple), transparent 65%)' }}
+          style={{ background: "radial-gradient(circle, var(--neon-purple), transparent 65%)" }}
         />
       </section>
 
@@ -155,7 +160,7 @@ export default function About() {
               </span>
             )}
             <Link
-              to="/support"
+              href="/support"
               className="border-b border-[var(--line-strong)] px-1 py-3 text-sm font-medium text-[var(--parchment-dim)] transition-colors hover:border-[var(--parchment)] hover:text-[var(--parchment)]"
             >
               Other ways to reach us →
@@ -164,5 +169,5 @@ export default function About() {
         </div>
       </section>
     </div>
-  )
+  );
 }

@@ -1,9 +1,9 @@
 function formatDate(iso) {
-  return new Date(iso + 'T00:00:00').toLocaleDateString('en-US', {
-    month: 'long',
-    day: 'numeric',
-    year: 'numeric',
-  })
+  return new Date(iso + "T00:00:00").toLocaleDateString("en-US", {
+    month: "long",
+    day: "numeric",
+    year: "numeric",
+  });
 }
 
 export default function NewsCard({ item, expanded = false }) {
@@ -23,5 +23,5 @@ export default function NewsCard({ item, expanded = false }) {
         <p className="mt-3 text-[0.95rem] leading-relaxed text-[var(--parchment-dim)]">{item.excerpt}</p>
       )}
     </article>
-  )
+  );
 }

@@ -1,12 +1,17 @@
-import { Link } from 'react-router-dom'
-import { MONO_ELEMENTS, HYBRID_ELEMENTS } from '../data/elements.js'
+import Link from "next/link";
+import { MONO_ELEMENTS, HYBRID_ELEMENTS } from "@/data/elements";
+
+export const metadata = {
+  title: "Games",
+  description: "Focus, PlayersMakingGames' flagship Expandable Card Game, plus what's next on the roadmap.",
+};
 
 const FEATURES = [
-  'Free to play — no randomized packs, ever',
-  '117-card pool across 8 elements, fully known from day one',
-  'Local hotseat, remote 1v1, and 4–8 player tournaments',
-  'Balance evolves through patches, not reprints',
-]
+  "Free to play — no randomized packs, ever",
+  "117-card pool across 8 elements, fully known from day one",
+  "Local hotseat, remote 1v1, and 4–8 player tournaments",
+  "Balance evolves through patches, not reprints",
+];
 
 function FaceDownSlot({ title, status }) {
   return (
@@ -16,7 +21,7 @@ function FaceDownSlot({ title, status }) {
         className="absolute inset-0 opacity-[0.06]"
         style={{
           backgroundImage:
-            'repeating-linear-gradient(135deg, var(--parchment) 0px, var(--parchment) 1px, transparent 1px, transparent 14px)',
+            "repeating-linear-gradient(135deg, var(--parchment) 0px, var(--parchment) 1px, transparent 1px, transparent 14px)",
         }}
       />
       <div className="relative flex h-full flex-col justify-between gap-10">
@@ -30,7 +35,7 @@ function FaceDownSlot({ title, status }) {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 export default function Games() {
@@ -134,12 +139,12 @@ export default function Games() {
             <p className="text-sm text-[var(--parchment-dim)]">
               We build with our community. Tell us what you want to see next.
             </p>
-            <Link to="/support" className="mt-1 text-sm font-medium text-[var(--ember-soft)] hover:underline">
+            <Link href="/support" className="mt-1 text-sm font-medium text-[var(--ember-soft)] hover:underline">
               Get in touch →
             </Link>
           </div>
         </div>
       </section>
     </div>
-  )
+  );
 }

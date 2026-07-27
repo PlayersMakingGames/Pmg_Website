@@ -1,9 +1,9 @@
-import { Link } from 'react-router-dom'
-import { NEWS } from '../data/news.js'
-import { MONO_ELEMENTS, HYBRID_ELEMENTS } from '../data/elements.js'
-import { VALUES } from '../data/values.jsx'
-import NewsCard from '../components/NewsCard.jsx'
-import ValueCard from '../components/ValueCard.jsx'
+import Link from "next/link";
+import { NEWS } from "@/data/news";
+import { MONO_ELEMENTS, HYBRID_ELEMENTS } from "@/data/elements";
+import { VALUES } from "@/data/values";
+import NewsCard from "@/components/NewsCard";
+import ValueCard from "@/components/ValueCard";
 
 export default function Home() {
   return (
@@ -22,13 +22,13 @@ export default function Home() {
           </p>
           <div className="mt-9 flex flex-wrap items-center gap-4">
             <Link
-              to="/games"
+              href="/games"
               className="panel-cut border border-[var(--ember)] bg-[var(--ember)]/15 px-6 py-3 text-sm font-semibold tracking-wide text-[var(--ember-soft)] transition-colors hover:bg-[var(--ember)]/25"
             >
               Play Focus
             </Link>
             <Link
-              to="/games"
+              href="/games"
               className="border-b border-[var(--line-strong)] px-1 py-3 text-sm font-medium text-[var(--parchment-dim)] transition-colors hover:border-[var(--parchment)] hover:text-[var(--parchment)]"
             >
               See our games →
@@ -40,12 +40,12 @@ export default function Home() {
         <div
           aria-hidden
           className="pointer-events-none absolute -right-40 -top-40 h-[32rem] w-[32rem] rounded-full opacity-40 blur-3xl"
-          style={{ background: 'radial-gradient(circle, var(--neon-purple), transparent 65%)' }}
+          style={{ background: "radial-gradient(circle, var(--neon-purple), transparent 65%)" }}
         />
         <div
           aria-hidden
           className="pointer-events-none absolute -left-32 top-24 h-96 w-96 rounded-full opacity-30 blur-3xl"
-          style={{ background: 'radial-gradient(circle, var(--ember), transparent 65%)' }}
+          style={{ background: "radial-gradient(circle, var(--ember), transparent 65%)" }}
         />
       </section>
 
@@ -59,7 +59,7 @@ export default function Home() {
             </h2>
           </div>
           <Link
-            to="/about"
+            href="/about"
             className="hidden shrink-0 text-sm font-medium text-[var(--parchment-dim)] hover:text-[var(--parchment)] sm:block"
           >
             More about us →
@@ -70,7 +70,7 @@ export default function Home() {
             <ValueCard key={v.title} value={v} />
           ))}
         </div>
-        <Link to="/about" className="mt-8 block text-sm font-medium text-[var(--parchment-dim)] hover:text-[var(--parchment)] sm:hidden">
+        <Link href="/about" className="mt-8 block text-sm font-medium text-[var(--parchment-dim)] hover:text-[var(--parchment)] sm:hidden">
           More about us →
         </Link>
       </section>
@@ -88,7 +88,7 @@ export default function Home() {
               Focus
             </h2>
             <p className="mt-5 leading-relaxed text-[var(--parchment-dim)]">
-              Focus is where that philosophy gets tested first. Built as an{' '}
+              Focus is where that philosophy gets tested first. Built as an{" "}
               <span className="text-[var(--parchment)]">ECG — an Expandable, not Trading, Card Game</span>
               , Focus throws out the randomized-pack model that makes traditional TCGs expensive
               and uneven, replacing it with one fixed, fully-known 117-card pool across eight
@@ -101,7 +101,7 @@ export default function Home() {
               and the proving ground for every game we make next.
             </p>
             <Link
-              to="/games"
+              href="/games"
               className="mt-6 inline-block border-b border-[var(--line-strong)] py-1 text-sm font-medium text-[var(--parchment)] transition-colors hover:border-[var(--ember-soft)] hover:text-[var(--ember-soft)]"
             >
               Learn more about Focus →
@@ -150,7 +150,7 @@ export default function Home() {
             </h2>
           </div>
           <Link
-            to="/news"
+            href="/news"
             className="hidden shrink-0 text-sm font-medium text-[var(--parchment-dim)] hover:text-[var(--parchment)] sm:block"
           >
             All news →
@@ -161,7 +161,7 @@ export default function Home() {
             <NewsCard key={item.slug} item={item} />
           ))}
         </div>
-        <Link to="/news" className="mt-8 block text-sm font-medium text-[var(--parchment-dim)] hover:text-[var(--parchment)] sm:hidden">
+        <Link href="/news" className="mt-8 block text-sm font-medium text-[var(--parchment-dim)] hover:text-[var(--parchment)] sm:hidden">
           All news →
         </Link>
       </section>
@@ -176,7 +176,7 @@ export default function Home() {
             <p className="mt-2 text-[var(--parchment-dim)]">Free to play, no packs to buy.</p>
           </div>
           <Link
-            to="/games"
+            href="/games"
             className="panel-cut shrink-0 border border-[var(--ember)] bg-[var(--ember)]/15 px-6 py-3 text-sm font-semibold tracking-wide text-[var(--ember-soft)] transition-colors hover:bg-[var(--ember)]/25"
           >
             Play Focus
@@ -184,5 +184,5 @@ export default function Home() {
         </div>
       </section>
     </>
-  )
+  );
 }

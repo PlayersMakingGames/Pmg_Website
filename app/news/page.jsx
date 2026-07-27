@@ -1,5 +1,10 @@
-import { NEWS } from '../data/news.js'
-import NewsCard from '../components/NewsCard.jsx'
+import { NEWS } from "@/data/news";
+import NewsCard from "@/components/NewsCard";
+
+export const metadata = {
+  title: "News",
+  description: "Patch notes and studio updates from PlayersMakingGames, in the order they shipped.",
+};
 
 export default function News() {
   return (
@@ -16,5 +21,5 @@ export default function News() {
         ))}
       </div>
     </div>
-  )
+  );
 }
