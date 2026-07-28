@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { FOCUS_GAME_URL } from "@/data/links";
 
 const LINKS = [
   { href: "/", label: "Home" },
@@ -62,12 +63,14 @@ export default function NavBar() {
           {LINKS.map((l) => (
             <NavItem key={l.href} {...l} />
           ))}
-          <Link
-            href="/games"
+          <a
+            href={FOCUS_GAME_URL}
+            target="_blank"
+            rel="noreferrer"
             className="panel-cut-sm border border-[var(--ember)]/50 bg-[var(--ember)]/10 px-4 py-1.5 text-sm font-medium text-[var(--ember-soft)] transition-colors hover:bg-[var(--ember)]/20"
           >
-            Play Focus
-          </Link>
+            Check it out
+          </a>
         </nav>
 
         <button
@@ -93,13 +96,15 @@ export default function NavBar() {
           {LINKS.map((l) => (
             <NavItem key={l.href} {...l} onClick={() => setOpen(false)} />
           ))}
-          <Link
-            href="/games"
+          <a
+            href={FOCUS_GAME_URL}
+            target="_blank"
+            rel="noreferrer"
             onClick={() => setOpen(false)}
             className="panel-cut-sm w-fit border border-[var(--ember)]/50 bg-[var(--ember)]/10 px-4 py-1.5 text-sm font-medium text-[var(--ember-soft)]"
           >
-            Play Focus
-          </Link>
+            Check it out
+          </a>
         </nav>
       )}
     </header>

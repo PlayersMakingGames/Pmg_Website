@@ -2,6 +2,7 @@ import Link from "next/link";
 import { NEWS } from "@/data/news";
 import { MONO_ELEMENTS, HYBRID_ELEMENTS } from "@/data/elements";
 import { VALUES } from "@/data/values";
+import { FOCUS_GAME_URL } from "@/data/links";
 import NewsCard from "@/components/NewsCard";
 import ValueCard from "@/components/ValueCard";
 
@@ -21,12 +22,14 @@ export default function Home() {
             would build, then keep building them together, patch by patch.
           </p>
           <div className="mt-9 flex flex-wrap items-center gap-4">
-            <Link
-              href="/games"
+            <a
+              href={FOCUS_GAME_URL}
+              target="_blank"
+              rel="noreferrer"
               className="panel-cut border border-[var(--ember)] bg-[var(--ember)]/15 px-6 py-3 text-sm font-semibold tracking-wide text-[var(--ember-soft)] transition-colors hover:bg-[var(--ember)]/25"
             >
-              Play Focus
-            </Link>
+              Check it out
+            </a>
             <Link
               href="/games"
               className="border-b border-[var(--line-strong)] px-1 py-3 text-sm font-medium text-[var(--parchment-dim)] transition-colors hover:border-[var(--parchment)] hover:text-[var(--parchment)]"
@@ -175,12 +178,14 @@ export default function Home() {
             </h2>
             <p className="mt-2 text-[var(--parchment-dim)]">Free to play, no packs to buy.</p>
           </div>
-          <Link
-            href="/games"
+          <a
+            href={FOCUS_GAME_URL}
+            target="_blank"
+            rel="noreferrer"
             className="panel-cut shrink-0 border border-[var(--ember)] bg-[var(--ember)]/15 px-6 py-3 text-sm font-semibold tracking-wide text-[var(--ember-soft)] transition-colors hover:bg-[var(--ember)]/25"
           >
-            Play Focus
-          </Link>
+            Check it out
+          </a>
         </div>
       </section>
     </>
