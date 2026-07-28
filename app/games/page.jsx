@@ -128,51 +128,6 @@ export default function Games() {
         </div>
       </section>
 
-      {/* Resources */}
-      <section className="mt-16">
-        <div className="eyebrow">Dig deeper</div>
-        <h2 className="mt-3 font-display text-2xl font-semibold text-[var(--parchment)]">More on Focus</h2>
-        <div className="mt-6 grid gap-5 sm:grid-cols-3">
-          <Link
-            href="/how-to-play"
-            className="panel-cut border border-[var(--line)] bg-[var(--ash)]/50 p-6 transition-colors hover:border-[var(--line-strong)]"
-          >
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M4 4.5A2.5 2.5 0 0 1 6.5 2H20v18H6.5A2.5 2.5 0 0 0 4 22.5v-18Z" />
-            </svg>
-            <h3 className="mt-4 font-display font-semibold text-[var(--parchment)]">How to Play</h3>
-            <p className="mt-2 text-sm leading-relaxed text-[var(--parchment-dim)]">
-              Turn structure, zones, and the two rules everyone forgets at first.
-            </p>
-          </Link>
-          <Link
-            href="/leaderboard"
-            className="panel-cut border border-[var(--line)] bg-[var(--ash)]/50 p-6 transition-colors hover:border-[var(--line-strong)]"
-          >
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M8 21h8M12 17v4M6 3h12v4a6 6 0 0 1-12 0V3ZM6 5H3a3 3 0 0 0 3 3M18 5h3a3 3 0 0 1-3 3" />
-            </svg>
-            <h3 className="mt-4 font-display font-semibold text-[var(--parchment)]">Leaderboard</h3>
-            <p className="mt-2 text-sm leading-relaxed text-[var(--parchment-dim)]">
-              Top 50 players, ranked by wins.
-            </p>
-          </Link>
-          <Link
-            href="/shop"
-            className="panel-cut border border-[var(--line)] bg-[var(--ash)]/50 p-6 transition-colors hover:border-[var(--line-strong)]"
-          >
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z" />
-              <path d="M3 6h18M16 10a4 4 0 0 1-8 0" />
-            </svg>
-            <h3 className="mt-4 font-display font-semibold text-[var(--parchment)]">Shop</h3>
-            <p className="mt-2 text-sm leading-relaxed text-[var(--parchment-dim)]">
-              Browse Elements, sleeves, and alternate arts priced in Gold.
-            </p>
-          </Link>
-        </div>
-      </section>
-
       {/* Roadmap */}
       <section className="mt-20">
         <div className="eyebrow">What's next</div>
