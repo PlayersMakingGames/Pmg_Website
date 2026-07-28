@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { MONO_ELEMENTS, HYBRID_ELEMENTS } from "@/data/elements";
-import { FOCUS_GAME_URL } from "@/data/links";
+import { FOCUS_HUB_PATH } from "@/data/links";
 
 export const metadata = {
   title: "Games",
@@ -76,14 +76,12 @@ export default function Games() {
             </ul>
 
             <div className="mt-8 flex flex-wrap gap-4">
-              <a
-                href={FOCUS_GAME_URL}
-                target="_blank"
-                rel="noreferrer"
+              <Link
+                href={FOCUS_HUB_PATH}
                 className="panel-cut border border-[var(--ember)] bg-[var(--ember)]/15 px-6 py-3 text-sm font-semibold tracking-wide text-[var(--ember-soft)] transition-colors hover:bg-[var(--ember)]/25"
               >
                 Play Now
-              </a>
+              </Link>
               <a
                 href="/focus-rulebook.pdf"
                 target="_blank"
