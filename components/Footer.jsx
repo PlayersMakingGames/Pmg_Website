@@ -57,9 +57,17 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 flex flex-col gap-2 border-t border-[var(--line)] pt-6 text-xs text-[var(--parchment-faint)] sm:flex-row sm:items-center sm:justify-between">
+        <div className="mt-10 flex flex-col gap-3 border-t border-[var(--line)] pt-6 text-xs text-[var(--parchment-faint)] sm:flex-row sm:items-center sm:justify-between">
           <span>© {new Date().getFullYear()} PlayersMakingGames. All rights reserved.</span>
-          <span className="font-mono">Focus and all card names are trademarks of PlayersMakingGames.</span>
+          <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
+            <Link href="/focus/terms" className="hover:text-[var(--parchment-dim)]">
+              Terms of Service
+            </Link>
+            <Link href="/focus/privacy" className="hover:text-[var(--parchment-dim)]">
+              Privacy Policy
+            </Link>
+            <span className="font-mono">Focus and all card names are trademarks of PlayersMakingGames.</span>
+          </div>
         </div>
       </div>
     </footer>
