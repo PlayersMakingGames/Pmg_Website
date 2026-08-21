@@ -49,19 +49,19 @@ export default function About() {
       <section className="mx-auto max-w-4xl px-5 py-16 sm:py-20">
         <div className="eyebrow">Why we exist</div>
         <h2 className="mt-3 font-display text-2xl font-semibold text-[var(--parchment)] sm:text-3xl">
-          Most card games ask you to buy blind
+          We wanted skill to matter more than spending
         </h2>
         <div className="mt-6 flex flex-col gap-4 text-[0.98rem] leading-relaxed text-[var(--parchment-dim)]">
           <p>
-            Randomized packs turn deckbuilding into a lottery, and the strongest decks end up
-            belonging to whoever spent the most, not whoever played the best. That's the part of
-            traditional trading card games we set out to fix.
+            Too many games let the biggest spender beat the better player. We wanted something
+            different: rules that stay fair, and a team that explains its reasoning instead of
+            hiding it.
           </p>
           <p>
-            PlayersMakingGames exists to build the alternative: games where the full card pool is
-            knowable from day one, where balance changes are explained instead of buried, and
-            where the people actually playing have a real say in where the game goes next. Focus
-            is the first proof of that approach, not the only one we plan to build.
+            PlayersMakingGames exists to build those games, whatever shape they take. Focus is
+            where that starts: a fixed card pool everyone can master equally, balance changes
+            explained instead of buried, and a roadmap shaped by the people actually playing it.
+            It's the first thing we've built, not the last.
           </p>
         </div>
       </section>
@@ -94,9 +94,9 @@ export default function About() {
           Our development philosophy
         </h2>
         <p className="mt-5 max-w-[62ch] leading-relaxed text-[var(--parchment-dim)]">
-          We believe great games come from human heart and human ingenuity. We embrace modern
-          tools to help us work faster and more efficiently, but we hold a firm boundary on
-          what those tools are allowed to do.
+          We believe great games come from real people making real decisions. We use modern
+          tools to move faster, but we draw a firm line on what those tools are allowed to
+          touch.
         </p>
 
         <div className="mt-8 grid gap-5 sm:grid-cols-2">
