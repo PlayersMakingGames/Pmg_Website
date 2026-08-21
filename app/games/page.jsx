@@ -22,7 +22,7 @@ export const metadata = {
 };
 
 const FEATURES = [
-  "Free to play — no randomized packs, ever",
+  "Free to play, no randomized packs, ever",
   "88-card pool across five elements, fully known from day one",
   "Local hotseat, remote 1v1, and 4–8 player tournaments",
   "Balance evolves through patches, not reprints",
@@ -73,7 +73,7 @@ export default function Games() {
             <p className="mt-2 text-lg text-[var(--parchment-dim)]">Five elements. One fair fight.</p>
 
             <p className="mt-5 leading-relaxed text-[var(--parchment-dim)]">
-              Focus is an Expandable Card Game — not a Trading one. There's no randomized pack to
+              Focus is an Expandable Card Game, not a Trading one. There's no randomized pack to
               chase: every card in the 88-card pool is knowable and buildable from the start, so
               matches are decided by deckbuilding and play, not by who bought more boosters.
             </p>

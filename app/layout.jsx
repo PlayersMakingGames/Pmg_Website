@@ -24,7 +24,7 @@ const plexMono = IBM_Plex_Mono({
 export const metadata = {
   title: {
     default: "PlayersMakingGames",
-    template: "%s — PlayersMakingGames",
+    template: "%s · PlayersMakingGames",
   },
   description:
     "PlayersMakingGames is an independent studio building fair, expandable card games. Creators of Focus.",

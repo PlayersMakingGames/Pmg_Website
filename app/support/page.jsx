@@ -17,26 +17,26 @@ export const metadata = {
 const FAQ = [
   {
     q: "What is Focus?",
-    a: "Focus is PlayersMakingGames’ flagship Expandable Card Game (ECG) — a fixed, fully-known 88-card pool across five elements, played head-to-head with no randomized packs.",
+    a: "Focus is PlayersMakingGames’ flagship Expandable Card Game (ECG): a fixed, fully-known 88-card pool across five elements, played head-to-head with no randomized packs.",
   },
   {
     q: "Is it actually free?",
-    a: "Yes. There’s nothing to buy to compete — every card is available to build with. The Shop sells cosmetic and quality-of-life items (deck boxes, card sleeves, alternate arts) and additional elements, paid for with Gold you earn by playing.",
+    a: "Yes. There’s nothing to buy to compete. Every card is available to build with. The Shop sells cosmetic and quality-of-life items (deck boxes, card sleeves, alternate arts) and additional elements, paid for with Gold you earn by playing.",
   },
   {
     q: "Do I need an account?",
-    a: "Yes — accounts are required to play. Signing up syncs your wallet, unlocked elements, and saved decks across every device you play on, and unlocks Friends, Gift Boxes, and daily quests.",
+    a: "Yes. Accounts are required to play. Signing up syncs your wallet, unlocked elements, and saved decks across every device you play on, and unlocks Friends, Gift Boxes, and daily quests.",
   },
   {
     q: "How do I play with a friend?",
-    a: "Two ways: Local Hotseat, passing one device back and forth, or Remote play — one player hosts and gets a short code, the other joins with it, and matches sync live across both devices. Best-of-3 two-deck series are supported in both modes.",
+    a: "Two ways: Local Hotseat, passing one device back and forth, or Remote play, where one player hosts and gets a short code, the other joins with it, and matches sync live across both devices. Best-of-3 two-deck series are supported in both modes.",
   },
   {
     q: "Can I run a tournament?",
-    a: "Yes — Tournament Mode supports 4–8 remote players in a single-elimination bracket, where every match is its own Best-of-3 series. Any connected player can start the bracket or advance a finished round, so it doesn’t stall if the organizer disconnects.",
+    a: "Yes. Tournament Mode supports 4–8 remote players in a single-elimination bracket, where every match is its own Best-of-3 series. Any connected player can start the bracket or advance a finished round, so it doesn’t stall if the organizer disconnects.",
   },
   {
-    q: "I found a bug, or a card isn’t working the way it’s printed — where do I report it?",
+    q: "I found a bug, or a card isn’t working the way it’s printed: where do I report it?",
     a: "Email us at the address below with the card name or a description of what happened. Rules interpretations and known gaps are tracked openly as part of our transparent-development approach.",
   },
 ];
@@ -80,7 +80,7 @@ export default function Support() {
       <section className="panel-cut mt-16 border border-[var(--line)] bg-[var(--ash)]/60 p-8">
         <h2 className="font-display text-xl font-semibold text-[var(--parchment)]">Still stuck?</h2>
         <p className="mt-2 max-w-[56ch] text-sm leading-relaxed text-[var(--parchment-dim)]">
-          Bug reports, balance feedback, or ideas for what we build next — they all reach the
+          Bug reports, balance feedback, or ideas for what we build next: they all reach the
           same small team.
         </p>
         <div className="mt-5 flex flex-wrap gap-x-8 gap-y-3 text-sm">
@@ -95,7 +95,7 @@ export default function Support() {
               Join our Discord
             </a>
           ) : (
-            <span className="text-[var(--parchment-faint)]">Discord community — coming soon</span>
+            <span className="text-[var(--parchment-faint)]">Discord community: coming soon</span>
           )}
         </div>
       </section>

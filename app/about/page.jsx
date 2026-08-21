@@ -33,9 +33,9 @@ export default function About() {
             About PlayersMakingGames
           </h1>
           <p className="mt-6 max-w-[58ch] text-lg leading-relaxed text-[var(--parchment-dim)]">
-            We build card games worth mastering — deep systems, honest odds, and rules that never
-            change because you didn't buy the right pack. We make the games our own community
-            would build, then keep building them together, patch by patch.
+            We build games meant to be mastered: clear rules, real strategy, all shaped by the
+            people who actually play them. Focus is where we're starting, and it won't be where
+            we stop.
           </p>
         </div>
         <div
@@ -54,14 +54,14 @@ export default function About() {
         <div className="mt-6 flex flex-col gap-4 text-[0.98rem] leading-relaxed text-[var(--parchment-dim)]">
           <p>
             Randomized packs turn deckbuilding into a lottery, and the strongest decks end up
-            belonging to whoever spent the most — not whoever played the best. That's the part of
+            belonging to whoever spent the most, not whoever played the best. That's the part of
             traditional trading card games we set out to fix.
           </p>
           <p>
             PlayersMakingGames exists to build the alternative: games where the full card pool is
             knowable from day one, where balance changes are explained instead of buried, and
             where the people actually playing have a real say in where the game goes next. Focus
-            is the first proof of that approach — not the only one we plan to build.
+            is the first proof of that approach, not the only one we plan to build.
           </p>
         </div>
       </section>
@@ -95,7 +95,7 @@ export default function About() {
         </h2>
         <p className="mt-5 max-w-[62ch] leading-relaxed text-[var(--parchment-dim)]">
           We believe great games come from human heart and human ingenuity. We embrace modern
-          tools to help us work faster and more efficiently — but we hold a firm boundary on
+          tools to help us work faster and more efficiently, but we hold a firm boundary on
           what those tools are allowed to do.
         </p>
 
@@ -135,7 +135,7 @@ export default function About() {
             </svg>
             <h3 className="mt-4 font-display text-lg font-semibold text-[var(--parchment)]">AI-Assisted</h3>
             <p className="mt-2 text-sm leading-relaxed text-[var(--parchment-dim)]">
-              We use AI tools for brainstorming — to broaden our own creative ideas — for coding,
+              We use AI tools for brainstorming (to broaden our own creative ideas), for coding,
               to handle repetitive infrastructure tasks, and for simulating playtest scenarios to
               stress-test our mechanics.
             </p>
@@ -170,7 +170,7 @@ export default function About() {
               </a>
             ) : (
               <span className="panel-cut border border-[var(--line-strong)] px-6 py-3 text-sm font-semibold tracking-wide text-[var(--parchment-faint)]">
-                Discord — coming soon
+                Discord: coming soon
               </span>
             )}
             <Link

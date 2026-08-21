@@ -17,9 +17,9 @@ export default function Home() {
             Card games worth <span className="text-[var(--ember-soft)]">mastering</span>.
           </h1>
           <p className="mt-6 max-w-[52ch] text-lg leading-relaxed text-[var(--parchment-dim)]">
-            We build card games worth mastering — deep systems, honest odds, and rules that never
-            change because you didn't buy the right pack. We make the games our own community
-            would build, then keep building them together, patch by patch.
+            We build games meant to be mastered: clear rules, real strategy, all shaped by the
+            people who actually play them. Focus is where we're starting, and it won't be where we
+            stop.
           </p>
           <div className="mt-9 flex flex-wrap items-center gap-4">
             <Link
@@ -90,7 +90,7 @@ export default function Home() {
             </h2>
             <p className="mt-5 leading-relaxed text-[var(--parchment-dim)]">
               Focus is where that philosophy gets tested first. Built as an{" "}
-              <span className="text-[var(--parchment)]">ECG — an Expandable, not Trading, Card Game</span>
+              <span className="text-[var(--parchment)]">ECG: an Expandable, not Trading, Card Game</span>
               , Focus throws out the randomized-pack model that makes traditional TCGs expensive
               and uneven, replacing it with one fixed, fully-known 88-card pool across five
               elements that every player can master on equal footing.
@@ -122,7 +122,7 @@ export default function Home() {
               ))}
             </div>
             <p className="mt-5 text-sm leading-relaxed text-[var(--parchment-faint)]">
-              No randomized packs — every card in the pool is knowable from day one.
+              No randomized packs. Every card in the pool is knowable from day one.
             </p>
           </div>
         </div>

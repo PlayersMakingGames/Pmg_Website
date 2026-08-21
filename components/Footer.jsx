@@ -50,7 +50,7 @@ export default function Footer() {
                     Join our Discord
                   </a>
                 ) : (
-                  <span className="text-[var(--parchment-faint)]">Discord — coming soon</span>
+                  <span className="text-[var(--parchment-faint)]">Discord: coming soon</span>
                 )}
               </li>
             </ul>
