@@ -3,12 +3,21 @@ import { DISCORD_INVITE_URL } from "@/data/links";
 export const metadata = {
   title: "Support",
   description: "Common questions about Focus and PlayersMakingGames, plus how to reach us directly.",
+  keywords: [
+    "Focus FAQ",
+    "Focus TCG help",
+    "Focus card game support",
+    "Focus rules questions",
+    "Focus ECG",
+    "PlayersMakingGames support",
+    "how to play Focus",
+  ],
 };
 
 const FAQ = [
   {
     q: "What is Focus?",
-    a: "Focus is PlayersMakingGames’ flagship Expandable Card Game (ECG) — a fixed, fully-known 117-card pool across eight elements, played head-to-head with no randomized packs.",
+    a: "Focus is PlayersMakingGames’ flagship Expandable Card Game (ECG) — a fixed, fully-known 88-card pool across five elements, played head-to-head with no randomized packs.",
   },
   {
     q: "Is it actually free?",

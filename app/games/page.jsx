@@ -1,15 +1,29 @@
 import Link from "next/link";
-import { MONO_ELEMENTS, HYBRID_ELEMENTS } from "@/data/elements";
+import { MONO_ELEMENTS } from "@/data/elements";
 import { FOCUS_HUB_PATH } from "@/data/links";
 
 export const metadata = {
   title: "Games",
   description: "Focus, PlayersMakingGames' flagship Expandable Card Game, plus what's next on the roadmap.",
+  keywords: [
+    "Focus TCG",
+    "Focus card game",
+    "Focus ECG",
+    "Focus rulebook",
+    "how to play Focus",
+    "Focus elements",
+    "Fire Earth Lightning Water Wind card game",
+    "five element card game",
+    "expandable card game",
+    "free online card game",
+    "browser card game",
+    "PlayersMakingGames",
+  ],
 };
 
 const FEATURES = [
   "Free to play — no randomized packs, ever",
-  "117-card pool across 8 elements, fully known from day one",
+  "88-card pool across five elements, fully known from day one",
   "Local hotseat, remote 1v1, and 4–8 player tournaments",
   "Balance evolves through patches, not reprints",
 ];
@@ -56,11 +70,11 @@ export default function Games() {
               FLAGSHIP · ECG
             </span>
             <h2 className="mt-4 font-display text-3xl font-bold text-[var(--parchment)] sm:text-4xl">Focus</h2>
-            <p className="mt-2 text-lg text-[var(--parchment-dim)]">Eight elements. One fair fight.</p>
+            <p className="mt-2 text-lg text-[var(--parchment-dim)]">Five elements. One fair fight.</p>
 
             <p className="mt-5 leading-relaxed text-[var(--parchment-dim)]">
               Focus is an Expandable Card Game — not a Trading one. There's no randomized pack to
-              chase: every card in the 117-card pool is knowable and buildable from the start, so
+              chase: every card in the 88-card pool is knowable and buildable from the start, so
               matches are decided by deckbuilding and play, not by who bought more boosters.
             </p>
 
@@ -94,7 +108,7 @@ export default function Games() {
           </div>
 
           <div className="panel-cut border border-[var(--line)] bg-[var(--void)]/50 p-6">
-            <div className="eyebrow">Mono elements</div>
+            <div className="eyebrow">Elements</div>
             <div className="mt-3 flex flex-wrap gap-2">
               {MONO_ELEMENTS.map((e) => (
                 <span
@@ -106,21 +120,8 @@ export default function Games() {
                 </span>
               ))}
             </div>
-            <div className="eyebrow mt-5">Hybrid elements</div>
-            <div className="mt-3 flex flex-wrap gap-2">
-              {HYBRID_ELEMENTS.map((e) => (
-                <span
-                  key={e.name}
-                  title={e.tag}
-                  className="panel-cut-sm border border-[var(--neon-purple)]/40 bg-[var(--neon-purple)]/10 px-3 py-1.5 text-xs font-medium text-[var(--parchment)]"
-                >
-                  {e.name}
-                </span>
-              ))}
-            </div>
             <p className="mt-5 text-xs leading-relaxed text-[var(--parchment-faint)]">
-              Start with two mono elements at Onboarding. Unlock the rest — including all three
-              hybrids — through the Shop.
+              Pick two elements at Onboarding to build your first deck.
             </p>
           </div>
         </div>

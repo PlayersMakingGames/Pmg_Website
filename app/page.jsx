@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { NEWS } from "@/data/news";
-import { MONO_ELEMENTS, HYBRID_ELEMENTS } from "@/data/elements";
+import { MONO_ELEMENTS } from "@/data/elements";
 import { VALUES } from "@/data/values";
 import { FOCUS_HUB_PATH } from "@/data/links";
 import NewsCard from "@/components/NewsCard";
@@ -92,7 +92,7 @@ export default function Home() {
               Focus is where that philosophy gets tested first. Built as an{" "}
               <span className="text-[var(--parchment)]">ECG — an Expandable, not Trading, Card Game</span>
               , Focus throws out the randomized-pack model that makes traditional TCGs expensive
-              and uneven, replacing it with one fixed, fully-known 117-card pool across eight
+              and uneven, replacing it with one fixed, fully-known 88-card pool across five
               elements that every player can master on equal footing.
             </p>
             <p className="mt-4 leading-relaxed text-[var(--parchment-dim)]">
@@ -110,7 +110,7 @@ export default function Home() {
           </div>
 
           <div className="panel-cut border border-[var(--line)] bg-[var(--ash)]/60 p-7">
-            <div className="eyebrow">Eight elements, one pool</div>
+            <div className="eyebrow">Five elements, one pool</div>
             <div className="mt-4 flex flex-wrap gap-2">
               {MONO_ELEMENTS.map((e) => (
                 <span
@@ -120,18 +120,9 @@ export default function Home() {
                   {e.name}
                 </span>
               ))}
-              {HYBRID_ELEMENTS.map((e) => (
-                <span
-                  key={e.name}
-                  className="panel-cut-sm border border-[var(--neon-purple)]/40 bg-[var(--neon-purple)]/10 px-3 py-1.5 text-xs font-medium text-[var(--parchment)]"
-                >
-                  {e.name}
-                </span>
-              ))}
             </div>
             <p className="mt-5 text-sm leading-relaxed text-[var(--parchment-faint)]">
-              5 mono elements to start, 3 hybrid elements to unlock. No randomized packs — every
-              card in the pool is knowable from day one.
+              No randomized packs — every card in the pool is knowable from day one.
             </p>
           </div>
         </div>

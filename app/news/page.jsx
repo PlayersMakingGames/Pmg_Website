@@ -4,6 +4,17 @@ import NewsCard from "@/components/NewsCard";
 export const metadata = {
   title: "News",
   description: "Patch notes and studio updates from PlayersMakingGames, in the order they shipped.",
+  keywords: [
+    "Focus TCG news",
+    "Focus patch notes",
+    "Focus TCG updates",
+    "Focus dev log",
+    "Focus changelog",
+    "PlayersMakingGames",
+    "Focus ECG",
+    "expandable card game",
+    "card game updates",
+  ],
 };
 
 export default function News() {

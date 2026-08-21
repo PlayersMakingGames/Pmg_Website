@@ -6,6 +6,20 @@ import ValueCard from "@/components/ValueCard";
 export const metadata = {
   title: "About",
   description: "Why PlayersMakingGames exists, our studio values, and our AI-assisted, human-designed development philosophy.",
+  keywords: [
+    "PlayersMakingGames",
+    "PMG",
+    "independent game studio",
+    "indie card game studio",
+    "Focus TCG",
+    "Focus ECG",
+    "expandable card game",
+    "AI-assisted game development",
+    "human-designed card game",
+    "game studio values",
+    "indie game developer",
+    "fair card game",
+  ],
 };
 
 export default function About() {

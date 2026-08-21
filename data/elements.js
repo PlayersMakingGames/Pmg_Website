@@ -5,9 +5,3 @@ export const MONO_ELEMENTS = [
   { name: 'Water', tag: 'Board control' },
   { name: 'Wind', tag: 'Skill recursion' },
 ]
-
-export const HYBRID_ELEMENTS = [
-  { name: 'Black Flame', tag: 'Mill & discard-burn' },
-  { name: 'Ice', tag: 'Lockdown counters' },
-  { name: 'Magnetic', tag: 'Positive/Negative synergy' },
-]
