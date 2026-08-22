@@ -40,8 +40,8 @@ export default function Footer() {
             <div className="eyebrow mb-3">Community</div>
             <ul className="flex flex-col gap-2 text-sm text-[var(--parchment-dim)]">
               <li>
-                <a href="mailto:hello@playersmakinggames.com" className="hover:text-[var(--parchment)]">
-                  hello@playersmakinggames.com
+                <a href="mailto:support@mail.pmg.cards" className="hover:text-[var(--parchment)]">
+                  support@mail.pmg.cards
                 </a>
               </li>
               <li>

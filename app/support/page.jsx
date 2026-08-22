@@ -85,10 +85,10 @@ export default function Support() {
         </p>
         <div className="mt-5 flex flex-wrap gap-x-8 gap-y-3 text-sm">
           <a
-            href="mailto:hello@playersmakinggames.com"
+            href="mailto:support@mail.pmg.cards"
             className="font-medium text-[var(--ember-soft)] hover:underline"
           >
-            hello@playersmakinggames.com
+            support@mail.pmg.cards
           </a>
           {DISCORD_INVITE_URL ? (
             <a href={DISCORD_INVITE_URL} target="_blank" rel="noreferrer" className="font-medium text-[var(--ember-soft)] hover:underline">
